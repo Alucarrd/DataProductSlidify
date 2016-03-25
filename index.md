@@ -5,7 +5,7 @@ author      : Peter Tan
 job         : Car Sales Consultant
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
+hitheme     : Darkula      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
@@ -57,6 +57,7 @@ head(mtcars)
 ## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 ```
 GaslineSpendingPerYr = input$totalMileage/mpg*input$avgGasPrice
+
 To compute the gasline spending per year, we take your input on expected total mileage travel per year, divided by miles per gallon for each vehicle and multiple by estimated average gasline price per gallon.
 
 ---
@@ -67,11 +68,11 @@ Thank you for your participation.  I hope this app will help you avoid hitting t
 
 You can test it out by accessing the following URL:
 
-[https://alucarrd.shinyapps.io/CouseraShiny/]https://alucarrd.shinyapps.io/CouseraShiny/
+https://alucarrd.shinyapps.io/CouseraShiny/
 
 The source code is stored at the following repository:
 
-[https://github.com/Alucarrd/DataProduct]https://github.com/Alucarrd/DataProduct
+https://github.com/Alucarrd/DataProduct
 
 
 
