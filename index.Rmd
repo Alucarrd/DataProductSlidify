@@ -1,0 +1,71 @@
+---
+title       : Pick the car for your budget!
+subtitle    : Cousera - Develop Data Product
+author      : Peter Tan
+job         : Car Sales Consultant
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+# Every Day Problem
+
+After riding through the gasline price roller coaster, even though we are at the down side of the price cycle, it is in everyone's fear if one day the price would shoot up again.  In order to prevent a family budget crisis, "Pick the car for your budget" is the app that will help you select the car that will not break your bank but gives you the horse power you are looking for.
+
+--- 
+
+# How To Use It
+
+
+To use this app, you will need to define the following requirement first:
+
+1. Total Gasline Budget you have planned for the year.
+2. Total estimated mileage you need to drive for a year.
+3. Average gasline price in miles per gallon format.
+4. Select the cylinder options for the car you wish to drive.
+5. Define the horse power range of the car you wish to drive.  After all, if the result meets your budget, you might want to pick the car that can give you the highest power output.
+6. Pick your flavor: Automatic transmission or Manual transmission.
+
+Once you have make your selection, the avaialble car choices that matches your need will be display on the body of the page.  You can sort this data set by clicking the arrows on at the column name or search by text for each column.  
+
+After you are satisfy with your options, then it is time to make your selection of the car that matches your need.
+
+---
+
+# The Logic Behind the App
+
+This app is using the mtcars dataset provided by the datasets package.
+
+We have displayed the sample data below:
+
+```{r}
+library(datasets)
+head(mtcars)
+```
+GaslineSpendingPerYr = input$totalMileage/mpg*input$avgGasPrice
+To compute the gasline spending per year, we take your input on expected total mileage travel per year, divided by miles per gallon for each vehicle and multiple by estimated average gasline price per gallon.
+
+---
+
+# Feedbacks
+
+Thank you for your participation.  I hope this app will help you avoid hitting the family budget crisis.
+
+You can test it out by accessing the following URL:
+
+[https://alucarrd.shinyapps.io/CouseraShiny/]https://alucarrd.shinyapps.io/CouseraShiny/
+
+The source code is stored at the following repository:
+
+[https://github.com/Alucarrd/DataProduct]https://github.com/Alucarrd/DataProduct
+
+
+
+
+
+
+
+
